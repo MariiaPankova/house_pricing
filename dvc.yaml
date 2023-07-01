@@ -1,0 +1,11 @@
+stages:
+  evaluation:
+    cmd: python src/dataprep.py
+    deps: 
+      - data/Housing.csv
+      - src/dataprep.py
+    params:
+      - model
+    metrics:
+      - dvclive/metrics.json
+
