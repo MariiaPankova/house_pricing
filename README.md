@@ -16,6 +16,6 @@ All categorical columns were preprocessed usind one-hot encoding.
 
 ## Results
 
-![](dvclive/plots/mse.png)
+![](assets/mse.png)
 
-![](dvclive/plots/r2.png)
+![](assets/r2.png)
