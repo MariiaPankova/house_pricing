@@ -9,21 +9,23 @@ stages:
       size: 29981
     - path: src/dataprep.py
       hash: md5
-      md5: 28b0b97553f0c81f3672a88b2b087b5c
-      size: 1773
+      md5: eef0e6c3aa30600f4fbf9c1991267e8f
+      size: 3066
     params:
       params.yaml:
         model:
-          colsample_bynode: 0.8
-          learning_rate: 1
-          max_depth: 5
-          num_parallel_tree: 100
-          objective: binary:logistic
-          subsample: 0.8
-          tree_method: gpu_hist
+          n_estimators: 1000
+          max_depth: 7
           eta: 0.01
+          subsample: 0.7
+          colsample_bytree: 0.8
     outs:
     - path: dvclive/metrics.json
       hash: md5
-      md5: 48525f52ac2893d2375600bf7a41f742
-      size: 337
+      md5: 37980e540583dae7aef62748e4e1310b
+      size: 175
+    - path: dvclive/plots
+      hash: md5
+      md5: a8abef138a3d7a3b13824ddffcd318e4.dir
+      size: 18911
+      nfiles: 6
